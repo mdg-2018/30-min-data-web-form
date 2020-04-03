@@ -22,7 +22,7 @@ function insertDocument(doc) {
 
     return new Promise(function (resolve, reject) {
         const MongoClient = require('mongodb').MongoClient;
-        const uri = ``; //put your Atlas connection string here!
+        const uri = ``; //put your MongoDB connection string here!
         const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
         client.connect(err => {
             if(err){
